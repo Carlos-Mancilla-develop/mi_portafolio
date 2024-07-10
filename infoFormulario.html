@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Formulario</title>
+    <script>
+        window.onload = function () {
+            let muestraMensaje = false;
+            let mensaje = "";
+            const searchParams = new URLSearchParams(window.location.search);
+            if (searchParams.has("nombre")) {
+                const name = searchParams.get("nombre");
+                console.log(name);
+                muestraMensaje = true;
+                mensaje += "<p>El nombre es " + name + "</p>";
+            }
+            if (searchParams.has("direccion")) {
+                const direccion = searchParams.get("direccion");
+                console.log(direccion);
+                muestraMensaje = true;
+                mensaje += "<p>La dirección es " + direccion + "</p>";
+            }
+            if (muestraMensaje) {
+                document.getElementById("info").innerHTML = mensaje;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="info">
+        Muestra la información de Info Formulario
+    </div>
+</body>
+</html>
