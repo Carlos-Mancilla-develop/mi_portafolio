@@ -1,0 +1,43 @@
+div, a {
+    background-color: chartreuse;
+}
+
+div {
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+    position: sticky;
+    top: 10%;
+}
+
+#division {
+    margin: 10%;
+    padding: 10%;
+    border-color: black;
+    border-style: solid;
+}
+
+
+/* Esto es lo anterior */
+/*
+* {
+    padding: 0;
+    margin: 0;
+}
+*/
+
+/*
+#division {
+    color: coral;
+    /* width: 600px; */
+/* }
+
+.contenedor {
+    background-color: blue;
+    /* width: 600px; */
+/* }
+
+div {
+    background-color: green;
+    /* width: 600px; */
+/* } */
