@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Bootstrap Form</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styleBootstrapForm.css">
+</head>
+<body>
+
+    <div class="bg-primary text-white mt-4 p-5">
+        <h1>Ejemplo Jumbotron</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Earum nihil quaerat mollitia vero quisquam facilis architecto, 
+        velit distinctio doloremque </p>
+    </div>
+
+    <div class="contenedor">
+        <form class="row g-3" action="./pagina_dos.html">
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Nombre</label>
+              <input type="text" class="form-control" name="inputEmail4" id="inputEmail4">
+            </div>
+            <div class="col-md-12">
+              <label for="inputPassword4" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" name="inputPassword4" id="inputPassword4">
+            </div>
+            <div class="col-md-12">
+              <label for="inputState" class="form-label">Motivo</label>
+              <select id="inputState" class="form-select">
+                <option selected>Felicitación</option>
+                <option>Reclamo</option>
+                <option>Sugerencia</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+                <label for="inputCity" class="form-label">Motivo</label>
+                <textarea class="form-control" id="inputCity"></textarea>
+            </div>
+            
+            <div class="col-12">
+              <button type="submit" class="btn btn-secondary">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

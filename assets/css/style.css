@@ -155,3 +155,11 @@ Pantalla Extra Large (>=1200px)
     margin-top: 6%;
     width: 80%;
 }
+
+.img-fluid{
+    width: 40%;
+    margin-top: 6%;
+}
+.contenedor-img{
+    text-align: center;
+}
