@@ -56,23 +56,33 @@ let nodosHijos = nodoPadre.childNodes;
 console.log("nodoPadre: ", nodoPadre);
 console.log("nodosHijos: " , nodosHijos);
 
+let nodosHijosCopia = [];
+
 for (let nodo of nodosHijos) {
     console.log("nodo: ", nodo);
-    nodoPadre.removeChild(nodo);
+    nodosHijosCopia.push(nodo);
+}
+
+// removemos los nodos
+for (let nodoCopia of nodosHijosCopia) {
+    console.log("nodoCopia: ", nodoCopia);
+    nodoPadre.removeChild(nodoCopia);
 }
 
 /*
-nodosHijos.forEach(function (nodo, idx, arr) {
-    console.log("nodo: ", nodo);
-    console.log("idx: ", idx);
-    console.log("arr: ", arr);
-    nodoPadre.removeChild(nodo);
-    console.log("nodof: ", nodo);
-    console.log("idxf: ", idx);
-    console.log("arrf: ", arr);
-});
+// restauramos los nodos
+for (let nodoCopia of nodosHijosCopia) {
+    console.log("nodoCopia: ", nodoCopia);
+    nodoPadre.appendChild(nodoCopia);
+}
 */
 
+/*
+nodosHijosCopia.forEach(function (nodoCopia) {
+    console.log("nodoCopia: ", nodoCopia);
+    nodoPadre.removeChild(nodoCopia);
+});
+*/
 
 
 

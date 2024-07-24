@@ -1,0 +1,14 @@
+#caja1 {
+    padding: 10px;
+    background-color: chartreuse;
+}
+
+#caja2 {
+    padding: 10px;
+    background-color: blue;
+    display: none;
+}
+
+#contenido {
+    background-color: coral;
+}
